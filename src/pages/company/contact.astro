@@ -10,24 +10,28 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
-
   <HeroText tagline="Contact" title="Let's Connect!" />
 
   <ContactUs
     title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    subtitle="Are you considering <code>salesforce.com</code> implementation, development or consulting? Are you seeking a partner to implement <code>salesforce.com</code> CRM? We are just an email away. Please send in your queries and our <code>salesforce.com</code> Certified Consultants will provide <b>free</b> 2 hrs consultation. Thank you!"
     inputs={[
       {
         type: 'text',
         name: 'name',
-        label: 'Name',
+        label: 'Name*',
       },
       {
         type: 'email',
         name: 'email',
-        label: 'Email',
+        label: 'Email*',
       },
+      {
+        type: 'tel',
+        pattern: "[0-9]{3} [0-9]{3} [0-9]{4}",
+        name: 'phone',
+        label: 'Phone No.'
+      }
     ]}
     textarea={{
       label: 'Message',
@@ -60,17 +64,17 @@ const metadata = {
       },
       {
         title: 'Phone',
-        description: '+1 (234) 567-890',
+        description: '+91 9820436966',
         icon: 'tabler:headset',
       },
       {
         title: 'Email',
-        description: 'contact@support.com',
+        description: 'info@satrangtech.com',
         icon: 'tabler:mail',
       },
       {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+        title: 'Locations',
+        description: '<b>Registered Office Address: </b>C22 Orchid Greens Girdharnagar Shahibaugh Ahmedabad - 380004 Gujarat, India<br><b>Headquarters Address: </b>201, Corporate Arena Piramal Nagar, Goregaon West Mumbai - 400104 Maharashtra, India<br><b>Nagpur Office Address: </b>401, Manomay Plaza Central Bazar Road, Ramdaspeth Nagpur - 440010 Maharashtra, India',
         icon: 'tabler:map-pin',
       },
     ]}

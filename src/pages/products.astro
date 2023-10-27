@@ -1,0 +1,150 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Products',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline="Products"
+    title="Use our amazing products"
+    subtitle="Explore our meticulously crafted products tailored to various industries and purposes."
+  />
+
+  <Features2
+    title="Explore our Products"
+    subtitle="Discover our selection below to streamline and elevate your projects."
+    columns={3}
+    items={[
+      {
+        icon: 'tabler:search',
+        title: 'Metadata Search',
+        description: 'One click search for Metadata components.',
+        callToAction: {
+          text: 'View Product',
+          href: '/products/metadata-search',
+          icon: 'tabler:chevron-right',
+        },
+      },
+      {
+        icon: 'tabler:drag-drop',
+        title: 'Drag, Drop & Create Multiple External Links',
+        description: 'Quickly add multiple external links!',
+        callToAction: {
+          text: 'View Product',
+          href: '/products/drag-drop-create-multiple-external-links',
+          icon: 'tabler:chevron-right',
+        },
+      },
+      {
+        // icon: 'tabler:mail',
+        icon: 'tabler:settings-automation',
+        title: 'Email to Salesforce Automation for Google Chrome',
+        description: 'Email to Salesforce and Chrome extension streamline email logging for sales.',
+        callToAction: {
+          text: 'View Product',
+          href: '/products/email-to-salesforce-automation-for-google-chrome',
+          icon: 'tabler:chevron-right',
+        },
+      },
+      {
+        icon: 'tabler:upload',
+        title: 'Chatter Photos Bulk Importer',
+        description: 'For bulk Chatter profile photo uploads, Chatter Photos Bulk Importer is ideal.',
+        callToAction: {
+          text: 'View Product',
+          href: '/products/chatter-photos-bulk-importer',
+          icon: 'tabler:chevron-right',
+        },
+      },
+      {
+        icon: 'tabler:chart-histogram',
+        title: 'Enhance Salesforce Dashboard',
+        description: 'Google Chrome Extension for auto-refreshing Salesforce Dashboard!',
+        callToAction: {
+          target: '_blank',
+          text: 'View Product',
+          href: '/products/enhance-salesforce-dashboard',
+          icon: 'tabler:chevron-right',
+        },
+      },
+      {
+        icon: 'tabler:drag-drop',
+        title: 'Drag, Drop & Upload Files to Amazon S3',
+        description:
+          'This app simplifies bulk file uploads to Amazon S3, offers download links in Salesforce, and ensures synced deletion with version support, eliminating Salesforce attachment size limits.',
+        callToAction: {
+          text: 'View Product',
+          href: '/products/drag-drop-upload-files-to-amazon-s3',
+          icon: 'tabler:chevron-right',
+        },
+      },
+      {
+        icon: 'tabler:click',
+        title: 'One Click Update',
+        description: 'Quick update records with just one click',
+        callToAction: {
+          text: 'View Product',
+          href: '/products/one-click-update',
+          icon: 'tabler:chevron-right',
+        },
+      },
+      {
+        icon: 'tabler:drag-drop',
+        title: 'Drag, Drop & Upload Multiple Content',
+        description: 'Streamline content uploads, drag and drop with ease.',
+        callToAction: {
+          text: 'View Product',
+          href: '/products/drag-drop-upload-multiple-content',
+          icon: 'tabler:chevron-right',
+        },
+      },
+      {
+        icon: 'tabler:checkbox',
+        title: 'Survey Android Application for Salesforce.com',
+        description: 'Effortlessly gather feedback on Android devices, directly integrated with Salesforce.',
+        callToAction: {
+          text: 'View Product',
+          href: '/products/surver-android-application-for-salesforce',
+          icon: 'tabler:chevron-right',
+        },
+      },
+      {
+        icon: 'tabler:download',
+        title: 'Download Content',
+        description:
+          'Eliminate the hassle of downloading one file at a time. Our app enables quick retrieval of multiple related content files, saving time for users.',
+        callToAction: {
+          text: 'View Product',
+          href: '/products/download-content',
+          icon: 'tabler:chevron-right',
+        },
+      },
+      {
+        icon: 'tabler:drag-drop',
+        title: 'Drag, Drop & Upload Multiple Files to Multiple Records',
+        description:
+          'Fulfill your wish to drag and drop multiple files directly to Salesforce records as attachments with this essential app for any standard or custom object.',
+        callToAction: {
+          text: 'View Product',
+          href: '/products/drag-drop-upload-multiple-files-to-multiple-records',
+          icon: 'tabler:chevron-right',
+        },
+      },
+      {
+        icon: 'tabler:report',
+        title: 'Enchance Salesforce Report',
+        description: 'Google Chrome Extension for auto-refreshing Salesforce Report.',
+        callToAction: {
+          text: 'View Product',
+          href: '/products/enhance-salesforce-report',
+          icon: 'tabler:chevron-right',
+        },
+      },
+    ]}
+  />
+</Layout>

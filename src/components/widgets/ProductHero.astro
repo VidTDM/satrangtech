@@ -1,0 +1,18 @@
+---
+export interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const { title = await Astro.slots.render('title'), subtitle = await Astro.slots.render('subtitle') } = Astro.props;
+---
+
+<section>
+  <div class="relative mx-auto max-w-7xl px-4 md:px-1 py-2 md:py-6 lg:py-10 text-default flex flex-col items-center">
+    <p class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase">products</p>
+    <p class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200">
+      {title && <Fragment set:html={title} />}
+    </p>
+    <p class="text-xl text-muted mb-2 dark:text-slate-300">{subtitle && <Fragment set:html={subtitle} />}</p>
+  </div>
+</section>

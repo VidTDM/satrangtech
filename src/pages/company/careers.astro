@@ -1,0 +1,38 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+
+const metadata = {
+  title: 'Contact',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText tagline="Careers" title="Read about our careers" />
+  <Fragment>
+    <div class="relative not-prose scroll-mt-[72px]">
+      <div class="relative mx-auto max-w-7xl px-4 md:px-6 py-12 md:py-16 lg:py-20 text-default">
+        <div class="my-[1rem]">
+          <h2 class="text-3xl"><b>Life at Sarang</b></h2>
+          <p class="my-[1rem]">
+            We always believe in working in an environment where we can accept challenges, explore the technologies,
+            grow ourselves and have a lot of fun with a lot of learnings. Here, we always have a bond of friendship
+            rather than maintaining a role level hierarchy.
+          </p>
+          <p class="my-[1rem]">
+            We get a chance to learn new things, implement new ideas and freedom to work in our ways instead of
+            following traditional approaches.
+          </p>
+          <p class="my-[1rem]">
+            So, come to have Life at Satrang Technologies and submit your resume. If you but don't see a role that
+            matches your particular experience, please submit a resume under "Other"
+          </p>
+        </div>
+        <div class="my-[1rem]">
+          <h2 class="text-3xl"><b>Job Listings</b></h2>
+          <p class="my-[1rem]">Sorry, there are currently no job listings</p>
+        </div>
+      </div>
+    </div>
+  </Fragment>
+</Layout>

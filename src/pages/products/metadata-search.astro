@@ -1,0 +1,34 @@
+---
+import Layout from '~/layouts/ProductsLayout.astro';
+import ProductHero from '~/components/widgets/ProductHero.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+
+const metadata = {
+  title: 'Metadata Search - Products',
+};
+---
+
+<Layout metadata={metadata}>
+  <ProductHero title="Metadata Search" subtitle="One click search for Metadata Components" />
+
+  <WidgetWrapper>
+    <Fragment>
+      <p>
+        Quick Search Recent Items, Fields, Objects, Reports, Dashboards, Custom Settings, Apps, Roles, Profiles,
+        Permission Sets, Templates, Groups, Queues, Sites, Record Types, Assignment Rules, Buttons & Links, Resources,
+        Classes, Triggers, Pages and Components.
+      </p>
+      <br />
+      <ul class="list-disc">
+        <li>Quick metadata search capability for the developers and administrators.</li>
+        <li>Different and varied configuration & customization components supported.</li>
+        <li>A UI experience similar to Salesforce with extensive components search feature.</li>
+      </ul>
+      <br />
+      <p>
+        If you’re tired of searching a specific component by browsing to each of the Apex Classes, VF Pages, Profiles,
+        Roles and other components from the set up then this is the app meant for you.
+      </p>
+    </Fragment>
+  </WidgetWrapper>
+</Layout>

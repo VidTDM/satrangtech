@@ -1,0 +1,30 @@
+---
+import Hero from '~/components/widgets/Hero.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Clients',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline="Clients"
+    title="Meet our clients and their testimonials"
+  />
+
+  <Testimonials
+    title="Words from real customers"
+    testimonials={[
+      {
+        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
+        name: 'Chairman, Huntsman',
+        image: {
+          src: 'https://www.satrangtech.com/img/clients/huntsman.png',
+          alt: 'Emily Kennedy Image',
+        },
+      },
+    ]}
+  />
+</Layout>

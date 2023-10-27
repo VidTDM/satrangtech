@@ -47,7 +47,7 @@ const {
         }) => (
           <div
             class={twMerge(
-              "relative flex flex-col",
+              "relative flex flex-col justify-between",
               panelClass,
               itemClasses?.panel
             )}
@@ -62,27 +62,29 @@ const {
                 )}
               />
             )}
-            <div
-              class={twMerge(
-                "text-xl font-bold",
-                titleClass,
-                itemClasses?.title
-              )}
-            >
-              {title}
-            </div>
-            {description && (
-              <p
+            <div>
+              <div
                 class={twMerge(
-                  "text-muted mt-2",
-                  descriptionClass,
-                  itemClasses?.description
+                  "text-xl font-bold",
+                  titleClass,
+                  itemClasses?.title
                 )}
-                set:html={description}
-              />
-            )}
+              >
+                {title}
+              </div>
+              {description && (
+                <p
+                  class={twMerge(
+                    "text-muted mt-2",
+                    descriptionClass,
+                    itemClasses?.description
+                  )}
+                  set:html={description}
+                />
+              )}
+            </div>
             {callToAction && (
-              <div class="mt-2">
+              <div class="mt-[1rem]">
                 <Button {...callToAction} />
               </div>
             )}

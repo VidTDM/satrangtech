@@ -1,0 +1,62 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+
+const metadata = {
+  title: 'Contact',
+};
+---
+
+<Layout metadata={metadata}>
+  <HeroText tagline="About Us" title="Know more about who we are" />
+  <Fragment>
+    <div class="relative not-prose scroll-mt-[72px]">
+      <div class="relative mx-auto max-w-7xl px-4 md:px-6 py-12 md:py-16 lg:py-20 text-default">
+        <p>
+          We are a Salesforce.com Registered Cloud Alliance Partner. We have the expertise on the Cloud computing
+          Salesforce.com product and provide Cloud & Salesforce outsourcing services to small and mid-size businesses
+          and large IT vendors.
+        </p>
+        <br />
+        <h3 class="text-lg"><b>Core Strengths</b></h3>
+        <ul class="list-disc">
+          <li>Extensive & varied SaaS/Cloud Computing consulting experience</li>
+          <li>Broad functional footprint to support end-to-end processes</li>
+          <li>Business value delivered according to each client’s unique requirements, timeline and budget</li>
+          <li>Continuous focus on improving system usability</li>
+          <li>Experience, execution and a passion for excellence</li>
+        </ul>
+        <br />
+        <h3 class="text-lg"><b>Technical Expertise:</b></h3>
+        <p>
+          Apex, Visualforce, Lightning, Force.com Sites, Integration, Data Migration, etc, and also have strong
+          knowledge of Salesforce.com configuration & administration.
+        </p>
+        <br />
+        <h3 class="text-lg"><b>Configuration/Admin Expertise:</b></h3>
+        <p>
+          Org setup, user management, workflows, process builders, flows, validations, approval processes, reports &
+          dashboards, assignment rules, communities, among others.
+        </p>
+        <br />
+        <h3 class="text-lg"><b>AppExchange Expertise:</b></h3>
+        <p>
+          We are a Salesforce registered AppExchange Product Development Outsourcers (PDOs). Built and published 10+
+          apps on <a href="http://satrangtech.com/apps.htm">AppExchange</a> and many others that we have built and
+          published for other customers/partners.
+        </p>
+        <br />
+        <h3 class="text-lg"><b>Functional Expertise:</b></h3>
+        <p>Sales Cloud, Marketing Cloud, Pardot, Service Cloud, Lightning, and Communities.</p>
+        <br />
+        <h3 class="text-lg"><b>Integration Expertise:</b></h3>
+        <p>
+          PDQ/Payment Integration, QuickBook, PayPal, Stripe, Authorize.net, Amazon Web Services, AvaTax, Diffbot,
+          Twilio, Slybroadcast, Infusion Soft, Mule Soft, Mailchimp, e-shot, Google Maps, and Custom Rest APIs.
+        </p>
+        <br />
+        <p><b>Hands-on experience</b> on Steelbrick CPQ, Conga Composers, Dupecatcher, Data.com</p>
+      </div>
+    </div>
+  </Fragment>
+</Layout>
